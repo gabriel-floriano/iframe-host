@@ -18,7 +18,10 @@
 import { onMounted, onBeforeUnmount } from "vue";
 import emailsDataSource from "../data/emails.json";
 
-const iframes = ["http://localhost:8081", "http://localhost:8082"];
+const iframes = [
+  "https://iframe-email-list.vercel.app/",
+  "https://iframe-selected-list.vercel.app/",
+];
 
 const getIframeByUrl = (url) => document.querySelector(`iframe[src="${url}"]`);
 
